@@ -1,0 +1,299 @@
+{
+  "version": 2,
+  "assets": [
+    {
+      "file": "nachtgeweih.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_210027_82696bc8-3be2-49ab-8d28-614f8d75e709.glb",
+      "kind": "model",
+      "sha256": "612fb1bb7e03cd5e73839282786ad2f6c359ade313169a5d720ab4680434cdd0",
+      "bytes": 7619060
+    },
+    {
+      "file": "cottage.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_210032_49a8731d-0fb1-44a3-b7da-fbe61a0c3d57.glb",
+      "kind": "model",
+      "sha256": "06a63427b6b015e3d66955ff792378f39bb9101b8e4d8802056452241ba80fd4",
+      "bytes": 15121216
+    },
+    {
+      "file": "forge.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_210036_700514a7-5b86-4fec-9f50-3df4f335bb3f.glb",
+      "kind": "model",
+      "sha256": "8d0708d9b3a3e8fc8dbb48abeac12bd892dc80987f27503c57dea491cd8f6171",
+      "bytes": 13098028
+    },
+    {
+      "file": "well.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_210041_b22f523e-9d97-4ec1-b56f-3ca22b5fc69c.glb",
+      "kind": "model",
+      "sha256": "a2b8ca4b348dfbfabddc3411dc133be6809047cf072156f4c95c2c0887c7dccd",
+      "bytes": 12751588
+    },
+    {
+      "file": "ferrari.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_213805_77a5ae2a-3bf1-4aa6-b008-acd41f1c8e6a.glb",
+      "kind": "model",
+      "sha256": "560d43955466b8583b8403444fcc67f3b7ba8fae7e119f08fe1ca4290275b5e2",
+      "bytes": 8794224
+    },
+    {
+      "file": "unicorn.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_213847_099ac582-44d0-4f95-bee3-5d020cb96d28.glb",
+      "kind": "model",
+      "sha256": "2fc40d802912c314941a4ebdc896b0970767f7f55206bd5ff6a567d9feece160",
+      "bytes": 14523496
+    },
+    {
+      "file": "mirja.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_212350_d4297cc3-ac1f-4bc1-83bc-0a2f0c6c577b.glb",
+      "kind": "model",
+      "sha256": "40803c1942ee3ec569e833a84e247292427564e9fbc3f99b1612bfd11b92e58c",
+      "bytes": 12411160
+    },
+    {
+      "file": "dawn-sword.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220711_e9ffc66e-f25b-4650-b157-93496f6f60d3.glb",
+      "kind": "model",
+      "sha256": "e421c7fa25cd754a531e4576232db1661d0558269b6f061d2fd17cea6bf5b5e7",
+      "bytes": 12560720
+    },
+    {
+      "file": "dawn-shield.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220715_e8297060-bbd1-483f-ad15-e1cdfb984300.glb",
+      "kind": "model",
+      "sha256": "2b6b7e22f3c248a601c681139b40022319c66998fff50f1e0bfaa58eddf7fabe",
+      "bytes": 15824832
+    },
+    {
+      "file": "tom-correct-rig.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220928_54b8f68d-f61b-4df0-a028-3b18e99f8f78.glb",
+      "kind": "model",
+      "sha256": "d79c2b92b747cdd64a759bf6ec5864a3144aca7dd3f5f837a76cf4ea7633b986",
+      "bytes": 15911940
+    },
+    {
+      "file": "vampire-rig.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_221444_3c4f8757-82ba-4672-be1d-835679c013d1.glb",
+      "kind": "model",
+      "sha256": "ec866a8aa73ddda385f781b9d1a1a157492fbced94e2072c5eb2315df0573e83",
+      "bytes": 12449492
+    },
+    {
+      "file": "orc-rig.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_221448_d0de27fc-2e52-400d-93ef-40547a4e1c63.glb",
+      "kind": "model",
+      "sha256": "c01781a498fcdd4a5526a4cf016e580b7113944fb7272cd005e687877c449170",
+      "bytes": 18317504
+    },
+    {
+      "file": "ghoul-rig.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_221452_f2577dd3-5702-4f7b-b978-253f88eb5240.glb",
+      "kind": "model",
+      "sha256": "99b08ea657256a7ff26ebdcd369ffeb58631465f91115242915c110388d9419f",
+      "bytes": 12999724
+    },
+    {
+      "file": "revenant-rig.glb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_221457_29fb721e-444a-434a-90ea-e7c1e4f9a626.glb",
+      "kind": "model",
+      "sha256": "4367c0a8c62cb429d01d53c0d91fab335e80273cf6dd696231db1f3d860b6dc4",
+      "bytes": 14505580
+    },
+    {
+      "file": "meadow.png",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_211058_4d33e5c5-5af5-45b0-8146-a526c174464a.png",
+      "kind": "texture",
+      "sha256": "9e06c92a67304672e3143ab160814eb6a46ef9f9d8c7c792c26d35a52a2c4ba0",
+      "bytes": 8387899
+    },
+    {
+      "file": "earth.png",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_211103_14aa6bd9-757c-4baa-906e-32cfdd8b4095.png",
+      "kind": "texture",
+      "sha256": "040a667a15f9cf816a84b49a19e154a08635ec93b86a69377b3424fc8cb64760",
+      "bytes": 8723233
+    },
+    {
+      "file": "stone.png",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_211107_3f14f39c-226b-40a8-a375-cd61bf7fb281.png",
+      "kind": "texture",
+      "sha256": "86d85b27571c10e7b176f9b9beb8390a025baf9894009e9aaa58ad5aa7764daf",
+      "bytes": 8932759
+    },
+    {
+      "file": "bark.png",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_211112_ac36508d-d5cb-4288-a69f-d0ca2dde40bc.png",
+      "kind": "texture",
+      "sha256": "6cb6781a96318eeb83d6cf72364548a2e5ada95ad32a968c93d5acc9db134b3d",
+      "bytes": 9161651
+    },
+    {
+      "file": "vampire-alert.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_c13600de-8b95-438b-8fe9-d408b8954ca7.mp3",
+      "kind": "audio",
+      "sha256": "d86f414c81d3f94e1d54089a80b78b7036107c6e3d3025aa983e94ac4f83a1a1",
+      "bytes": 44702
+    },
+    {
+      "file": "vampire-hurt.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_6126b063-4221-47b7-9e15-96be55a56285.mp3",
+      "kind": "audio",
+      "sha256": "aba420aadfc41e92ab192c5d37ea1eee654d4c76b6bda1b6039fb78da4fb9679",
+      "bytes": 20461
+    },
+    {
+      "file": "vampire-death.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_2b5e7e03-6af6-4f23-b36e-7de68f989e44.mp3",
+      "kind": "audio",
+      "sha256": "a7efbbcdac0964a91e5c5fa64e1e73ed09c6e550ad17e64940c31530b538420d",
+      "bytes": 38603
+    },
+    {
+      "file": "orc-alert.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_1d90d37e-d37c-4305-a435-cd985bc670d6.mp3",
+      "kind": "audio",
+      "sha256": "4b85d357f5efdf6a386f2598d2cc973c01e0bbc06da4491452fbfd75cb936165",
+      "bytes": 47944
+    },
+    {
+      "file": "orc-hurt.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_bf8bee6a-9c6e-4916-9020-93657f935efe.mp3",
+      "kind": "audio",
+      "sha256": "3f86dfb555f76af9bcff0c7c59a3b7ccbdd8b6b42a3508025f181d8f74575aec",
+      "bytes": 22699
+    },
+    {
+      "file": "orc-death.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220501_8e125dd0-710b-48f5-bc31-a1bf5780cd9c.mp3",
+      "kind": "audio",
+      "sha256": "5bb040d4947efcf61beb2e402e79233264b00dc4d627ffaa6aed932700925b04",
+      "bytes": 37772
+    },
+    {
+      "file": "ghoul-alert.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220508_f41c35b5-0c2a-444f-b395-6ce3883d2b6c.mp3",
+      "kind": "audio",
+      "sha256": "84f176b889dfbf5a24fb9a19a76d16e73b380c55e0a2948e17b8f5eb37f23e2d",
+      "bytes": 46295
+    },
+    {
+      "file": "ghoul-hurt.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220507_964c1424-006a-43e9-b482-2b861047fbaf.mp3",
+      "kind": "audio",
+      "sha256": "2bb8bdd40d4027ffc05c63476df88f925ba5a2dea209065c3cca27e35352d8d7",
+      "bytes": 22439
+    },
+    {
+      "file": "ghoul-death.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220508_2b5ef54f-bfb1-4297-907a-45a6846ae093.mp3",
+      "kind": "audio",
+      "sha256": "dc79ba128e4e5336e145459a7eb82fe6eae2a09c1cd4572026d7f4c7764d31ca",
+      "bytes": 36000
+    },
+    {
+      "file": "revenant-alert.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220508_f540e675-51ea-4058-801f-77c1358c8303.mp3",
+      "kind": "audio",
+      "sha256": "c9164c4237f255781763e39f9328e827510425dcbb987cf34eeaaaed0b6266dc",
+      "bytes": 61964
+    },
+    {
+      "file": "revenant-hurt.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220508_a91682f1-5379-4ddd-87e7-26bc35f66273.mp3",
+      "kind": "audio",
+      "sha256": "ddb8e3c380524fe2800bc0391e7eb3f1a6f04030812fe48ca613c4550c5574ad",
+      "bytes": 21658
+    },
+    {
+      "file": "revenant-death.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220510_f1daf66c-d8a1-45a0-8955-c87519f2d9d0.mp3",
+      "kind": "audio",
+      "sha256": "87adeda81e79729a8afacdc8cdf07a8c2a415b38232dbba03798abc91d339406",
+      "bytes": 37455
+    },
+    {
+      "file": "nachtgeweih-alert.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_a1eb2640-3fb2-42d4-8632-ceaa70804cee.mp3",
+      "kind": "audio",
+      "sha256": "733dddd764d2c6e194fd234cc9799548103042706e528d5b4cd96f2a789f5d70",
+      "bytes": 46419
+    },
+    {
+      "file": "nachtgeweih-hurt.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_96741085-2427-4185-8ff6-aafcc5c867fa.mp3",
+      "kind": "audio",
+      "sha256": "cc7bc3ce6cc3662e549faede84d02a9b588d8c931efe11bdabcf5b72601eb24d",
+      "bytes": 22543
+    },
+    {
+      "file": "nachtgeweih-death.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_92451d6b-e938-4485-b8bb-d4678db3d9f6.mp3",
+      "kind": "audio",
+      "sha256": "2622b6cddaa06383b14bcba20689791e479ad547fc8492ddc5ac9e71e8c57769",
+      "bytes": 37871
+    },
+    {
+      "file": "sword-swing.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_40c80950-5b91-4753-a447-8fab10de311b.mp3",
+      "kind": "audio",
+      "sha256": "39355de8ec0b2bd8757f33c7d8a93b8bfbe397b3e5e2581331d4998fe90f761a",
+      "bytes": 16809
+    },
+    {
+      "file": "sword-hit.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_93a30cb6-1c44-48f0-a59c-4090c3a3abba.mp3",
+      "kind": "audio",
+      "sha256": "436e415f5ce187d267206524d1f5e5639c7aeaae75f1167f06a13e623e091f4a",
+      "bytes": 16393
+    },
+    {
+      "file": "shield-parry.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_220516_523a3084-b732-48d4-bbde-6fabfe9ac3a0.mp3",
+      "kind": "audio",
+      "sha256": "c53402f8fc9cb477324df4a5c06e56ddf155625a61e84dca2517e940240ca01a",
+      "bytes": 23636
+    },
+    {
+      "file": "v10-idle.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_223825_e813895f-98cb-4b98-8eed-b9a563c46f61.mp3",
+      "kind": "audio",
+      "sha256": "c383fa3705755c0846c835abff20cf482cc817b2b998504925723dc8a60e42c9",
+      "bytes": 88861
+    },
+    {
+      "file": "v10-drive.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_223825_e88588b9-ed2e-4200-b3b6-f50714b13ae0.mp3",
+      "kind": "audio",
+      "sha256": "38fa36b4cc356dbf2ae3bc4e27d968affe55582592d2f0da5ff0c48b456c8b74",
+      "bytes": 86013
+    },
+    {
+      "file": "v10-overrun.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_223825_2f5a4c96-8e5c-4658-a9bb-b235f7f768c2.mp3",
+      "kind": "audio",
+      "sha256": "5f880da7551f861286f9ff83a0c12b99d6905adfa9d2c3768c8285611f9f9e71",
+      "bytes": 24734
+    },
+    {
+      "file": "v10-start.mp3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/hf_20261110_223825_84d9548d-b393-4d59-8f7c-6e3f9139c126.mp3",
+      "kind": "audio",
+      "sha256": "9ceba3fea545843928d00069d46d901ae85eec534d5e557a4536fee45fc71c92",
+      "bytes": 36217
+    },
+    {
+      "file": "monsterkill.mp3",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/33f0d3c9-7c93-408b-a567-cd7492acbe82.mp3",
+      "kind": "audio",
+      "sha256": "065bff39e6421b3c1df3021bfa0236783ab6e76fceacdc3b03165a30bcecd884",
+      "bytes": 54189
+    },
+    {
+      "file": "hengst-impact.mp3",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KoNUnLaoRzsAMuYBBHBFTOhuUV/9e9139eb-4a41-4fc4-9f07-52f6a8b0a4a7.mp3",
+      "kind": "audio",
+      "sha256": "e9263bfd78fd13f74a08560d40d9735c4f79b940524f208c01f2a32e772a39e5",
+      "bytes": 13584
+    }
+  ]
+}

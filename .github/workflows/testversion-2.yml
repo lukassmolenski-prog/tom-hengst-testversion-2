@@ -1,7 +1,8 @@
-name: Testversion 2 – Paket prüfen
+name: Testversion 2 – Spiel veröffentlichen
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
@@ -23,6 +24,12 @@ jobs:
         run: node testversion-2/fetch-assets.cjs
       - name: Paket und Koop prüfen
         run: node testversion-2/verify-package.cjs
+      - name: Online-Spiel bauen
+        run: node testversion-2/build-web.cjs
+      - name: Webseite für GitHub Pages bereitstellen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: testversion-2/web
       - name: Startpaket bereitstellen
         uses: actions/upload-artifact@v4
         with:
@@ -43,3 +50,19 @@ jobs:
             testversion-2/runtime/package-lock.json
             testversion-2/runtime/node_modules/three/
             testversion-2/runtime/node_modules/ws/
+  deploy:
+    if: github.repository == 'lukassmolenski-prog/tom-hengst-testversion-2' && github.ref == 'refs/heads/main'
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Pages-Einstellung prüfen
+        uses: actions/configure-pages@v5
+      - name: Spiel veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

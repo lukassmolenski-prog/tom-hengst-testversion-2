@@ -13,7 +13,7 @@ class LocalCoop {
   return new Promise((resolve,reject)=>{this.resolve=resolve;this.reject=reject;this.start=Date.now();this.open();});
  }
  open(){
-  if(this.closed)return;clearTimeout(this.retryTimer);const ws=new WebSocket(`${location.protocol==='https:'?'wss:':'ws:'}//${location.host}/room`);this.socket=ws;
+  if(this.closed)return;clearTimeout(this.retryTimer);const ws=window.TH_ONLINE?new window.PeerRoomSocket():new WebSocket(`${location.protocol==='https:'?'wss:':'ws:'}//${location.host}/room`);this.socket=ws;
   const timeout=setTimeout(()=>ws.close(),15000);
   ws.onopen=()=>{clearTimeout(timeout);ws.send(JSON.stringify(this.token?{type:'join',code:this.code,token:this.token,name:this.request.name}:this.request));};
   ws.onmessage=({data})=>{if(this.socket!==ws)return;let q;try{q=JSON.parse(data);}catch{return;}
@@ -33,7 +33,7 @@ class LocalCoop {
    else if(q.type==='error'){if(this.reject){this.reject(new Error(q.message));this.resolve=this.reject=null;this.close(false);}else this.status(q.message);}
   };
   ws.onerror=()=>{};ws.onclose=()=>{clearTimeout(timeout);if(this.socket!==ws||this.closed)return;this.connected=false;this.voice.dropConnections();this.disconnectedAt ||=Date.now();this.status('Verbindung wird wiederhergestellt · Platz bleibt 10 Minuten reserviert');
-   if(!this.token&&Date.now()-this.start>45000){this.reject?.(new Error('Der lokale Koop-Server ist nicht erreichbar. Bitte das Spiel über Start-Spiel.cmd öffnen.'));this.resolve=this.reject=null;this.close(false);return;}
+   if(!this.token&&Date.now()-this.start>(window.TH_ONLINE?600000:45000)){this.reject?.(new Error(window.TH_ONLINE?'Der Gastgeber ist nicht erreichbar. Bitte Code prüfen und das Spiel auf beiden Handys öffnen. Manche Mobilfunknetze benötigen eine zusätzliche Weiterleitung.':'Der lokale Koop-Server ist nicht erreichbar. Bitte das Spiel über Start-Testversion.cmd öffnen.'));this.resolve=this.reject=null;this.close(false);return;}
    if(Date.now()-this.disconnectedAt>600000){this.emit('lost');this.close(false);return;}
    this.retryTimer=setTimeout(()=>this.open(),Math.min(1000*2**this.retry++,10000));
   };
@@ -44,7 +44,7 @@ class LocalCoop {
  cache(world,version){this.raw({type:'cache',world,version});}
  kick(id){this.raw({type:'kick',id});}
  presence(){this.raw({type:'presence',away:document.hidden,mic:this.voice.enabled&&!document.hidden});this.voice.visibility();}
- status(message){if(message)this.message=message;window.dispatchEvent(new CustomEvent('local-room-state',{detail:this}));}
+ status(message){if(message)this.message=message;if(window.TH_ONLINE&&!this.connected&&document.getElementById('coStat'))document.getElementById('coStat').textContent='Warte auf den Gastgeber … Bei WhatsApp kurz zurück ins Spiel wechseln. Beitritt wird bis zu 10 Minuten wiederholt.';window.dispatchEvent(new CustomEvent('local-room-state',{detail:this}));}
  close(notify=true){if(notify)this.raw({type:'leave'});try{sessionStorage.removeItem('th.local-room');}catch{}this.closed=true;clearTimeout(this.retryTimer);clearInterval(this.heartbeat);document.removeEventListener('visibilitychange',this.visibility);removeEventListener('online',this.online);this.socket?.close();this.voice.stop();this.role=null;this.conns.clear();this.status('Raum verlassen');}
 }
 class RoomVoice {
@@ -56,7 +56,7 @@ class RoomVoice {
   try{this.stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true},video:false});this.enabled=true;for(const p of this.peers.values())await p.sender?.replaceTrack(this.stream.getAudioTracks()[0]);this.note('Mikrofon an');this.room.presence();await this.roster(this.room.members);for(const [id,p] of this.peers){p.audio?.play().catch(()=>{});if(this.room.id<id)await this.offer(id,p);else this.room.raw({type:'signal',to:id,signal:{restart:true}});}}
   catch(e){this.note(e.name==='NotAllowedError'?'Mikrofon nicht freigegeben. In den Browser-Einstellungen erlauben.':'Mikrofon konnte nicht gestartet werden.');}
  }
- async config(){if(!this.ice)this.ice=fetch('/rtc-config').then(r=>r.json()).catch(()=>({iceServers:[]}));return this.ice;}
+ async config(){if(window.TH_ONLINE){await window.TH_ICE_READY;return window.TH_ICE_CONFIG;}if(!this.ice)this.ice=fetch('/rtc-config').then(r=>r.json()).catch(()=>({iceServers:[]}));return this.ice;}
  async ensure(id){
   if(this.peers.has(id))return this.peers.get(id);
   const pc=new RTCPeerConnection(await this.config());if(this.peers.has(id)){pc.close();return this.peers.get(id);}

@@ -2,3 +2,4 @@ testversion-2/assets/
 testversion-2/runtime/node_modules/
 testversion-2/*.log
 testversion-2/package-check.json
+testversion-2/web/

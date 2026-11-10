@@ -44,7 +44,15 @@ class LocalCoop {
  cache(world,version){this.raw({type:'cache',world,version});}
  kick(id){this.raw({type:'kick',id});}
  presence(){this.raw({type:'presence',away:document.hidden,mic:this.voice.enabled&&!document.hidden});this.voice.visibility();}
- status(message){if(message)this.message=message;if(window.TH_ONLINE&&!this.connected&&document.getElementById('coStat'))document.getElementById('coStat').textContent='Warte auf den Gastgeber … Bei WhatsApp kurz zurück ins Spiel wechseln. Beitritt wird bis zu 10 Minuten wiederholt.';window.dispatchEvent(new CustomEvent('local-room-state',{detail:this}));}
+ status(message){
+  if(message)this.message=message;
+  const stat=window.TH_ONLINE&&document.getElementById('coStat');
+  if(stat){
+   if(!this.closed&&!this.connected){this.waitingText=this.hosting||this.request?.type==='create'?'Dein Raum wird wieder verbunden … Bitte diesen Spiel-Tab geöffnet lassen. Wiederverbindung bis zu 10 Minuten.':'Warte auf den Gastgeber … Bei WhatsApp kurz zurück ins Spiel wechseln. Beitritt wird bis zu 10 Minuten wiederholt.';stat.textContent=this.waitingText;}
+   else{if(this.waitingText&&stat.textContent===this.waitingText)stat.textContent='';this.waitingText=null;}
+  }
+  window.dispatchEvent(new CustomEvent('local-room-state',{detail:this}));
+ }
  close(notify=true){if(notify)this.raw({type:'leave'});try{sessionStorage.removeItem('th.local-room');}catch{}this.closed=true;clearTimeout(this.retryTimer);clearInterval(this.heartbeat);document.removeEventListener('visibilitychange',this.visibility);removeEventListener('online',this.online);this.socket?.close();this.voice.stop();this.role=null;this.conns.clear();this.status('Raum verlassen');}
 }
 class RoomVoice {
